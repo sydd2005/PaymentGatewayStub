@@ -14,4 +14,4 @@ function getQueryParams (queryString) {
     }, {});
 }
 
-console.log(getQueryParams(location.hash));
+console.log(getQueryParams(location.search));
