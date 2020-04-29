@@ -14,4 +14,6 @@ function getQueryParams (queryString) {
     }, {});
 }
 
-console.log(getQueryParams(location.search));
+const queryParams = getQueryParams(location.search);
+const returnUrl = queryParams['returnUrl'] || '#';
+document.querySelector('#cancelLink').setAttribute('href', returnUrl);
