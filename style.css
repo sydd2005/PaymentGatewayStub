@@ -1,0 +1,11 @@
+a {
+  font-family: sans-serif;
+}
+
+.padded {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 250px;
+  padding: 25px;
+}
