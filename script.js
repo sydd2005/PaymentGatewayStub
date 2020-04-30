@@ -15,5 +15,9 @@ function getQueryParams (queryString) {
 }
 
 const queryParams = getQueryParams(location.search);
-const returnUrl = queryParams['returnUrl'] || '#';
-document.querySelector('#cancelLink').setAttribute('href', returnUrl);
+const successUrl = queryParams['successUrl'] || '#';
+const failureUrl = queryParams['failureUrl'] || '#';
+const cancelUrl = queryParams['cancelUrl'] || '#';
+document.querySelector('#successLink').setAttribute('href', successUrl);
+document.querySelector('#failureLink').setAttribute('href', failureUrl);
+document.querySelector('#cancelLink').setAttribute('href', cancelUrl);
